@@ -1,7 +1,7 @@
 import tcod as libtcod
 
 def handle_keys(key):
-    #movement key handling
+    # movement key handling
     if key.vk == libtcod.KEY_UP:
         return  {'move': (0, -1)}
     elif key.vk == libtcod.KEY_DOWN:
@@ -19,5 +19,5 @@ def handle_keys(key):
         #exit the game
         return {'exit': True}
 
-    #no key was pressed
+    # no key was pressed
     return {}
